@@ -1,0 +1,32 @@
+/*
+body{
+    background-color: rgb(255, 255, 255);
+}
+*/
+
+header{
+    background-color: rgb(164, 19, 24);
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    margin-top: -2.5%;
+}
+
+.washu {
+    padding: 2%;
+    max-width: 80%;
+    height: auto;
+}
+
+.user{
+    max-width: 100%;
+    height: auto;
+}
+
+.screen{
+    font-size: 40pt;
+}
+
+.screening{
+    max-width: 200%;
+    height: auto;
+}

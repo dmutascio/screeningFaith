@@ -1,14 +1,57 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>CSE 204 - Assignment 05 Instagram Clone</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Screening Spoof</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </style><style>.div-center[_ngcontent-vlm-c4]{height:200px}.mat-raised-button[_ngcontent-vlm-c4]{background-color:#a51417!important;color:#fff;width:15em;height:3em}mat-form-field[_ngcontent-vlm-c4]{display:block}mat-card[_ngcontent-vlm-c4]{margin-right:auto;max-width:400px;margin-left:auto;text-align:center}a[_ngcontent-vlm-c4]{color:#fff}</style><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.qv6viowpwpE.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOaUfPxgj7Tq1y4CPKAnKfHQ9ZJNQ/cb=gapi.loaded_0" async=""></script><script type="text/javascript" charset="UTF-8" src="https://apis.google.com/js/api.js?onload=__iframefcb830236" gapi_processed="true"></script><style>.washington-title[_ngcontent-vlm-c5]{width:389px;height:31px;margin:0 0 0 14px;font-family:Libre Baskerville;font-size:14px;font-weight:700;font-stretch:normal;font-style:normal;line-height:normal;letter-spacing:normal;text-align:left;color:#fff}.washington-title[_ngcontent-vlm-c5]   .text-style-1[_ngcontent-vlm-c5]{font-size:18px;height:50px;font-weight:400;padding:15px 15px 15px 0}.COVID-19-Screening[_ngcontent-vlm-c5]{margin:0 15.7px 13px 0;font-family:Source Sans Pro;font-size:23px;font-weight:600;font-stretch:normal;font-style:normal;line-height:normal;letter-spacing:normal;text-align:left;color:#3d3d3d}.screening-content[_ngcontent-vlm-c5]{padding-left:10%;padding-right:12%;padding-top:20px;width:100%;background:#fff;flex-direction:row;box-sizing:border-box;display:flex;justify-content:space-between}.mobile-digital-shield-outline-rev-1[_ngcontent-vlm-c5]{height:100%;margin-bottom:1.3em;max-width:100%}.mobile-digital-shield-outline-rev-1[_ngcontent-vlm-c5], .toolbar[_ngcontent-vlm-c5]{-o-object-fit:contain;object-fit:contain}</style><style>.mat-button .mat-button-focus-overlay,.mat-icon-button .mat-button-focus-overlay{opacity:0}.mat-button:hover .mat-button-focus-overlay,.mat-stroked-button:hover .mat-button-focus-overlay{opacity:.04}@media(hover: none){.mat-button:hover .mat-button-focus-overlay,.mat-stroked-button:hover .mat-button-focus-overlay{opacity:0}}.mat-button,.mat-icon-button,.mat-stroked-button,.mat-flat-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-button[disabled],.mat-icon-button[disabled],.mat-stroked-button[disabled],.mat-flat-button[disabled]{cursor:default}.mat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-button.cdk-program-focused .mat-button-focus-overlay,.mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-icon-button.cdk-program-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-program-focused .mat-button-focus-overlay,.mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-flat-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-raised-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-raised-button::-moz-focus-inner{border:0}.mat-raised-button[disabled]{cursor:default}.mat-raised-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-raised-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-raised-button::-moz-focus-inner{border:0}._mat-animation-noopable.mat-raised-button{transition:none;animation:none}.mat-stroked-button{border:1px solid currentColor;padding:0 15px;line-height:34px}.mat-stroked-button .mat-button-ripple.mat-ripple,.mat-stroked-button .mat-button-focus-overlay{top:-1px;left:-1px;right:-1px;bottom:-1px}.mat-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:56px;height:56px;padding:0;flex-shrink:0}.mat-fab::-moz-focus-inner{border:0}.mat-fab[disabled]{cursor:default}.mat-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-fab::-moz-focus-inner{border:0}._mat-animation-noopable.mat-fab{transition:none;animation:none}.mat-fab .mat-button-wrapper{padding:16px 0;display:inline-block;line-height:24px}.mat-mini-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:40px;height:40px;padding:0;flex-shrink:0}.mat-mini-fab::-moz-focus-inner{border:0}.mat-mini-fab[disabled]{cursor:default}.mat-mini-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-mini-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-mini-fab::-moz-focus-inner{border:0}._mat-animation-noopable.mat-mini-fab{transition:none;animation:none}.mat-mini-fab .mat-button-wrapper{padding:8px 0;display:inline-block;line-height:24px}.mat-icon-button{padding:0;min-width:0;width:40px;height:40px;flex-shrink:0;line-height:40px;border-radius:50%}.mat-icon-button i,.mat-icon-button .mat-icon{line-height:24px}.mat-button-ripple.mat-ripple,.mat-button-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-button-ripple.mat-ripple:not(:empty){transform:translateZ(0)}.mat-button-focus-overlay{opacity:0;transition:opacity 200ms cubic-bezier(0.35, 0, 0.25, 1),background-color 200ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-button-focus-overlay{transition:none}.cdk-high-contrast-active .mat-button-focus-overlay{background-color:#fff}.cdk-high-contrast-black-on-white .mat-button-focus-overlay{background-color:#000}.mat-button-ripple-round{border-radius:50%;z-index:1}.mat-button .mat-button-wrapper>*,.mat-flat-button .mat-button-wrapper>*,.mat-stroked-button .mat-button-wrapper>*,.mat-raised-button .mat-button-wrapper>*,.mat-icon-button .mat-button-wrapper>*,.mat-fab .mat-button-wrapper>*,.mat-mini-fab .mat-button-wrapper>*{vertical-align:middle}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button{display:block;font-size:inherit;width:2.5em;height:2.5em}.cdk-high-contrast-active .mat-button,.cdk-high-contrast-active .mat-flat-button,.cdk-high-contrast-active .mat-raised-button,.cdk-high-contrast-active .mat-icon-button,.cdk-high-contrast-active .mat-fab,.cdk-high-contrast-active .mat-mini-fab{outline:solid 1px}
+  </style><style>.Symptom-Screener-Cleared[_ngcontent-vlm-c11]{text-align:center;padding-left:10%;padding-right:12%;min-height:400px;margin-top:30px;background-color:#fff}.itro-msg[_ngcontent-vlm-c11]{margin:0 0 7px;font-size:13.3px;font-weight:300;line-height:normal;color:grey}.itro-msg[_ngcontent-vlm-c11], .large-text[_ngcontent-vlm-c11]{font-family:Source Sans Pro;font-stretch:normal;font-style:normal;letter-spacing:normal;text-align:center}.large-text[_ngcontent-vlm-c11]{margin:7px 0 0;font-size:19.2px;font-weight:400;line-height:1.3;color:#3d3d3d}</style>
+  </head>
 
-    </head>
-    <body style = "text-align: center;">
-        hehe
-    </body>
+  <body class="mat-typography">
+    <app-root _nghost-vlm-c0="" ng-version="9.1.12">
+        <router-outlet _ngcontent-vlm-c0=""></router-outlet>
+        <app-layout _nghost-vlm-c5="" class="ng-star-inserted">
+            <div _ngcontent-vlm-c5="" fxflexfill="" fxlayout="column" style="height: 100%; min-height: 100%; min-width: 100%; width: 100%; flex-direction: column; box-sizing: border-box; display: flex;">
+                <header style="text-align: center;">
+                    <img _ngcontent-vlm-c5="" class="washu" fxshow="true" fxshow.gt-sm="" routerlinkactive="router-link-active" src="washu.png">
+                </header>
+            <div _ngcontent-vlm-c5="" class="screening-content" fxlayout="row" fxshow="true" fxshow.gt-sm="" style="flex-direction: row; box-sizing: border-box; display: flex;">
+            <p _ngcontent-vlm-c5="" class="COVID-19-Screening">COVID-19 SCREENING</p>
+            <button class="mat-icon-button ">
+                <span class="mat-button-wrapper">
+                    <i  aria-hidden="true" class="fa fa-user-circle" style="font-size: 30px;
+              color: #3d3d3d;
+              vertical-align: baseline;">
+                    </i>
+                </span>
+            </button>
+        </div>
+        <mat-menu _ngcontent-vlm-c5="" class="ng-tns-c7-1"><!----></mat-menu>
+        <div _ngcontent-vlm-c5="" fxflex="" style="background-color: white; flex: 1 1 1e-9px; box-sizing: border-box;">
+            <app-cleared _nghost-vlm-c11="" class="ng-star-inserted">
+                <div _ngcontent-vlm-c11="" class="Symptom-Screener-Cleared ">
+                    <p _ngcontent-vlm-c11="" class="itro-msg">Screening Taken </p>
+                    <p _ngcontent-vlm-c11="" class="large-text" id = "date"></p>
+                    <p _ngcontent-vlm-c11="" class="large-text time"></p>
+                    <br _ngcontent-vlm-c11="">
+                    <p _ngcontent-vlm-c11="" class="itro-msg">Results</p>
+                    <img _ngcontent-vlm-c11="" src="PermittedCheck.svg">
+                    <p _ngcontent-vlm-c11="" class="large-text" style="color: #2b8282;">Cleared for Campus</p>
+                    <br _ngcontent-vlm-c11="">
+                    <p _ngcontent-vlm-c11="" class="itro-msg">Name</p>
+                    <p _ngcontent-vlm-c11="" class="large-text"> David Mutascio<br _ngcontent-vlm-c11=""> dmutascio</p><br _ngcontent-vlm-c11="">
+                    <p _ngcontent-vlm-c11="" class="itro-msg">Valid Until</p>
+                    <p _ngcontent-vlm-c11="" class="large-text" id = "nextDate"></p>
+                    <p _ngcontent-vlm-c11="" class="large-text time"></p><br _ngcontent-vlm-c11="">
+                </div>
+            </app-cleared>
+        </div>
+        </app-layout>
+        <script src="script.js"></script>
+</body>
 </html>
-
