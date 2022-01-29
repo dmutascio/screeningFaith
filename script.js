@@ -44,7 +44,9 @@ else{
     nextDay = today.getDay() +1;
 }
 
-var nextDate = days.get(nextDay) + ", " + month + " " + date + ", " + year;
+var 
+
+var nextDate = days.get(nextDay) + ", " + month + " " + (date+1) + ", " + year;
 
 document.getElementById("date").innerHTML = fullDate;
 document.getElementById("nextDate").innerHTML = nextDate;
