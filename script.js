@@ -1,6 +1,58 @@
 const today = new Date();
 const days = new Map();
 const months = new Map();
+const namesMen = [
+    "Hugh Jass",
+    "Mike Hawk",
+    "Ben Dover",
+    "Peter File",
+    "Heywood Jablowme",
+    "Barry McKockiner",
+    "Hugh G. Rection",
+    "Mike Oxlong",
+    "Phil McCraken",
+    "Gabe Itch",
+    "Moe Lester",
+    "Justin Herass",
+    "Todd Lerfondler",
+    "Gabe Utsecks",
+    "Hugh Janus",
+    "Ray Pist",
+    "Harry Anoos",
+    "Hari Balsac",
+    "Ped O\’Phyl",
+    "York Oxmall",
+    "Ice Wallow Come",
+    "Biggie Rections",
+    "Bo Nerr",
+    "Jack Meoff",
+    "Mike Lit",
+    "Matt Sterbater",
+    "Zuck Mabaulz",
+    "Dig Bick",
+    "Mike Lithurts"
+]
+
+const namesWomen = [
+    "Wilma Diqfit", 
+    "Dixie Normous",
+    "Betty Phucker",
+    "Miss Carriage",
+    "Maya Normus Bhut",
+    "Anna Borshin",
+    "Wilma Dikfit",
+    "Craven Morehed",
+    "Tera Wrist",
+    "E. Norma Stits",
+    "Mass Debater",
+    "Jenny Talia",
+    "Tess Tickles",
+    "Anne Null",
+    "Cle Torres",
+    "Pooh See",
+    "Dill Dough",
+    "Kimmy Hed"
+]
 
 days.set(0, 'Sunday');
 days.set(1, 'Monday');
@@ -22,6 +74,12 @@ months.set(8, 'September')
 months.set(9, 'October')
 months.set(10, 'November')
 months.set(11, 'December')
+
+var gender = true;
+
+window.onload = function() {
+    generateName(namesMen);
+};
 
 var day = today.getDay();
 day = days.get(day);
@@ -53,3 +111,35 @@ for(var i = 0; i < times.length; i++) {
     times[i].innerHTML = fullTime;
 }
 
+function randName (names){
+    var index = Math.floor(Math.random() * names.length);
+    var name = names[index];
+    return name;
+}
+
+function userName (name){
+    let nameArray = name.split(" ")
+    var first = nameArray[0];
+    first = first[0];
+    var last = nameArray[nameArray.length-1]
+    var username = first+"."+last;
+    return username;
+}
+
+function generateName (names){
+    var name = randName(names);
+    var username = userName(name);
+    username = username.toLowerCase();
+    document.getElementById("fullName").innerHTML = name;
+    document.getElementById("username").innerHTML = username;
+}
+
+function switchGender (){
+    if (gender == true){
+        generateName(namesMen);
+    }
+    else {
+        generateName(namesWomen);
+    }
+    gender = !gender;
+}
