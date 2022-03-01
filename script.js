@@ -27,7 +27,7 @@ var day = today.getDay();
 day = days.get(day);
 var month = today.getMonth();
 month = months.get(month);
-var date = today.getUTCDate();
+var date = today.getDate();
 var year = today.getFullYear();
 var hours = today.getHours();
 var ampm = hours >= 12 ? 'PM' : 'AM';
